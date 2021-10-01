@@ -4,6 +4,8 @@ from instabot import Bot
 from instagrapi import Client
 from PIL import Image
 import time
+from dotenv import load_dotenv
+import os
 
 def Process():
 
@@ -50,12 +52,12 @@ def post_on_instagram():
 	try:
 
 		time.sleep(1)
-		Username = 'pycodemates'
-		Password = 'sid***#h5050u150@'
+		Username = os.environ.get('USER')
+		Password = os.environ.get('PASSWORD')
 		bot = Client()
 		bot.login(Username, Password)
 		bot.user_id_from_username(Username)
-		bot.album_upload(paths=['intro.jpg','carbon1.jpg'], caption='successfully')
+		bot.album_upload(paths=['intro.jpg','carbon.jpg'], caption='successfully')
 
 	except:
 		print("Error occured!")
