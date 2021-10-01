@@ -34,7 +34,7 @@ def Process():
 			print("processing finished successfully.")
 
 	except Exception as e:
-		print("Processing Error!"+e)
+		print("Processing Error! {}".format(e))
 				
 
 def convert_to_jpg():
@@ -58,7 +58,5 @@ def post_on_instagram():
 		bot.album_upload(paths=['intro.jpg','carbon.jpg'], caption='successfully')
 
 	except Exception as e:
-		print("Error occured!"+e)
+		print("Error occured! {}".format(e))
 
-
-post_on_instagram()
