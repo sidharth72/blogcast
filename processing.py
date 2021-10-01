@@ -60,5 +60,3 @@ def post_on_instagram():
 	except:
 		print("Error occured!")
 
-
-Process()
