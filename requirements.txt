@@ -84,7 +84,6 @@ Pygments==2.10.0
 pyparsing==2.4.7
 PyPDF2==1.26.0
 pyperclip==1.8.2
-pypiwin32==223
 pyrsistent==0.18.0
 PySocks==1.7.1
 pytest==6.2.5
