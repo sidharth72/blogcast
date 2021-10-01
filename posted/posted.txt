@@ -1,2 +1,0 @@
-
-Ridge Regression, simple understanding & implementation using python | Machine Learning
