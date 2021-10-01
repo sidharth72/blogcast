@@ -39,9 +39,9 @@ def Process():
 
 def convert_to_jpg():
 
-	img = Image.open('carbon1.png')
+	img = Image.open('carbon.png')
 	rgb_im = img.convert('RGB')
-	rgb_im.save('carbon1.jpg')
+	rgb_im.save('carbon.jpg')
 
 
 
